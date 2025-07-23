@@ -12,7 +12,8 @@ This is a front-end landing page for an e-commerce platform, built with **HTML**
 - **Footer** – Includes contact info and social media links.
 
 ## Screenshots
-![Landing-page](https://github.com/user-attachments/assets/ebee7595-5dae-4ee2-b587-3315e6a73a62)
+https://github.com/user-attachments/assets/334d8b14-e9c6-4119-a258-7d7a65b307c8
+
 
 
 ## Technologies Used
