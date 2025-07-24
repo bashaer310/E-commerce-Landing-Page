@@ -34,10 +34,6 @@ https://github.com/user-attachments/assets/3ae0423f-4b93-43d9-9ec8-e08dec90dadd
       ├── CSS/
       │   └── style.css
       └── Images/
-          ├── hero.jpg
-          ├── logo.svg
-          ├── plant1.png
-          └── plant2.png
   ```
 
 ## Deployment
