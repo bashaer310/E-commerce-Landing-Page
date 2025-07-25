@@ -37,7 +37,7 @@ https://github.com/user-attachments/assets/3ae0423f-4b93-43d9-9ec8-e08dec90dadd
   ```
 
 ## Deployment
-The Landing page is deployed and can be accessed at: https://planty-landing-page.netlify.app/
+The Landing page is deployed and can be accessed at: [Landing page](https://planty-landing-page.netlify.app/)
 
 ## License
 This project is licensed under the MIT License.
