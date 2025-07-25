@@ -1,13 +1,13 @@
 # E-commerce Landing Page
-This is a landing page for an e-commerce platform, built with **HTML** and **CSS**. It includes key sections such as a responsive navbar, hero banner, product listings, reviews, newsletter subscription form, and footer.
+This is a landing page for an e-commerce platform, built with HTML and CSS. It includes key sections such as **a responsive navbar**, **hero banner**, **product listings**, **reviews**, **newsletter subscription form**, and **footer**.
 
 ## Features
-- **Navbar** – Responsive navigation bar for easy access to all sections.  
-- **Hero Section** – Highlights main message.  
-- **Product Listings** – Showcases featured products.  
-- **Customer Reviews** – Displays user testimonials.  
-- **Newsletter** – Subscription form for updates.  
-- **Footer** – Includes contact info and social media links.
+- **Navbar** – Responsive navigation bar for easy access to all sections.
+- **Hero Section** – Highlights the main message.  
+- **Product Listings** – Displays featured products in an organized layout. 
+- **Customer Reviews** – Showcases user testimonials and feedback.
+- **Newsletter** – Email subscription form for updates. 
+- **Footer** – Contains contact information and social media links.
 
 ## Live Demo
 https://github.com/user-attachments/assets/3ae0423f-4b93-43d9-9ec8-e08dec90dadd
