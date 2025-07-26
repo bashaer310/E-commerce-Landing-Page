@@ -3,11 +3,11 @@ This is a landing page for an e-commerce platform, built with HTML and CSS. It i
 
 ## Features
 - **Navbar** – Responsive navigation bar for easy access to all sections.
-- **Hero Section** – Highlights the main message.  
-- **Product Listings** – Displays featured products in an organized layout. 
-- **Customer Reviews** – Showcases user testimonials and feedback.
+- **Hero Section** – Highlight the main message.  
+- **Product Listings** – Display featured products in an organized layout. 
+- **Customer Reviews** – Showcase user testimonials and feedback.
 - **Newsletter** – Email subscription form for updates. 
-- **Footer** – Contains contact information and social media links.
+- **Footer** – Contact information and social media links.
 
 ## Live Demo
 https://github.com/user-attachments/assets/3ae0423f-4b93-43d9-9ec8-e08dec90dadd
