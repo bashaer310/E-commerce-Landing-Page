@@ -30,10 +30,8 @@ https://github.com/user-attachments/assets/3ae0423f-4b93-43d9-9ec8-e08dec90dadd
 ## Project Structure
   ```bash
   E-commerce-Landing-Page/
-      ├── index.html
-      ├── CSS/
-      │   └── style.css
-      └── Images/
+      ├── index.html              # Main page HTML file
+      ├── CSS/                    # Stylesheet files
   ```
 
 ## Deployment
