@@ -13,8 +13,9 @@ This is a landing page for an e-commerce platform, built with HTML and CSS. It i
 https://github.com/user-attachments/assets/3ae0423f-4b93-43d9-9ec8-e08dec90dadd
 
 ## Technologies Used
-- HTML5 – Markup structure
-- CSS3 – Styling and layout
+- Languages
+   - HTML5 – Markup structure
+   - CSS3 – Styling and layout
 
 ## Getting Started
 1. Clone the repository:
