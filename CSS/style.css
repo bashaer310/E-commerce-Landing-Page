@@ -1,15 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
-/*global*/
+/* Variables */
+:root {
+  --primary: rgb(31, 64, 16);
+  --secondary: rgb(186, 123, 29);
+  --light: #f8f8f8;
+  --dark: #000;
+  --white: #fff;
+  --shadow: 0 0.5px 3px 0 rgba(12, 7, 0, 0.3);
+  --radius: 8px;
+}
+
+/* Global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Josefin Sans", serif;
-  color: rgba(0, 0, 0);
+  color: var(--dark);
   letter-spacing: 1px;
   font-size: 14px;
   overflow-x: hidden;
@@ -25,36 +40,48 @@ ul {
 }
 
 button,
-input {
+input[type="submit"] {
   font: inherit;
   border: none;
   appearance: none;
-  background-color: rgb(186, 123, 29);
+  background-color: var(--secondary);
+  color: var(--white);
   padding: 0.7rem 0.7rem;
-  box-shadow: 0 0.5px 3px 0 rgba(12, 7, 0, 0.491);
-  border-radius: 2.5px;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
   text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-button:hover {
-  background-color: rgb(186, 123, 29, 0.9);
-  scale: 1.1;
+button:hover,
+input[type="submit"]:hover {
+  background-color: rgba(186, 123, 29, 0.9);
+  transform: scale(1.1);
 }
 
-/* header */
+input[type="email"] {
+  border: 1px solid #ccc;
+  padding: 0.7rem;
+  border-radius: var(--radius);
+  background-color: var(--white);
+  width: 70%;
+  max-width: 20rem;
+}
+
+/* Header */
 header {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white);
   padding: 1.5rem 2.5rem;
-  box-shadow: 0 0.5px 1.5px 0 rgb(0, 0, 0, 0.2);
+  box-shadow: 0 0.5px 1.5px 0 rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
 .logo {
-  color: rgb(31, 64, 16);
-  /*secondary-color:rgb(172, 120, 41);*/
-  scale: 1.7;
+  color: var(--primary);
+  transform: scale(1.7);
 }
 
 .nav {
@@ -73,15 +100,16 @@ header {
 
 .nav > ul > li {
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav > ul > li:hover {
-  color: rgb(186, 123, 29);
+  color: var(--secondary);
   font-weight: bold;
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
-/*hero section*/
+/* Hero */
 .hero {
   display: flex;
   flex-direction: column;
@@ -92,32 +120,32 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
     url("../Images/hero.jpg");
   background-size: cover;
-  background-origin: border-box;
-}
-
-section.hero > h1,
-section.hero > p {
-  color: rgb(255, 255, 255);
+  background-position: center;
   text-align: center;
 }
 
-section.hero > h1 {
+.hero h1,
+.hero p {
+  color: var(--white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
   font-size: 40px;
   text-transform: capitalize;
 }
 
-section.hero > p {
+.hero p {
   max-width: 50rem;
   font-size: 20px;
-  text-wrap: wrap;
   font-weight: lighter;
 }
 
-section.hero > button {
+.hero button {
   margin-top: 2.5rem;
 }
 
-/*products & reviews & subscription-form section*/
+/* Products & Reviews */
 .products,
 .reviews {
   margin-top: 5rem;
@@ -127,7 +155,7 @@ section.hero > button {
 .reviews > h2 {
   font-size: 30px;
   text-align: center;
-  color: rgb(31, 64, 16);
+  color: var(--primary);
   text-transform: capitalize;
 }
 
@@ -141,11 +169,6 @@ section.hero > button {
 }
 
 .product-card,
-.review-card {
-  margin-top: 2rem;
-}
-
-.product-card,
 .review-card,
 .subscription-form-card {
   display: flex;
@@ -153,44 +176,34 @@ section.hero > button {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
+.product-card,
 .review-card {
-  background-color: rgba(248, 248, 248);
-  box-shadow: 0 0.5px 1.5px 0 rgb(0, 0, 0, 0.2);
-  border-radius: 2px;
-  align-items: start;
-  padding-left: 2.5rem;
-  width: 18rem;
-  height: 9rem;
+  margin-top: 2rem;
 }
 
-.subscription-form-card {
-  margin: 5rem auto 0 auto;
-  padding: 5rem 0;
-  width: 50%;
-  border-radius: 10px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url("../Images/hero.jpg");
-  background-size: 50rem 30rem;
-  background-origin: border-box;
+.product-card:hover,
+.review-card:hover {
+  transform: scale(1.05);
 }
 
 .product-img {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 12rem;
   height: 12rem;
-  background-color: rgba(248, 248, 248);
-  box-shadow: 0 0.5px 1.5px 0 rgb(0, 0, 0, 0.2);
-  border-radius: 2px;
+  background-color: var(--light);
+  box-shadow: 0 0.5px 1.5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
 }
 
 .product-card img {
   width: 16rem;
   height: 11rem;
+  object-fit: cover;
 }
 
 .product-info {
@@ -198,71 +211,70 @@ section.hero > button {
   line-height: 1.5rem;
 }
 
+.product-info p,
+.review-card p {
+  color: var(--dark);
+  font-weight: lighter;
+}
+
+.product-info i {
+  color: rgb(226, 192, 55);
+}
+
 .reviewer-info {
   display: flex;
   gap: 0.5rem;
 }
 
-.product-info > p,
-.review-card > p {
-  color: rgba(0, 0, 0);
-  font-weight: lighter;
+.review-card {
+  background-color: var(--light);
+  box-shadow: 0 0.5px 1.5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+  align-items: start;
+  padding: 1.5rem;
+  width: 18rem;
+  height: 9rem;
 }
 
-.product-info > i {
-  color: rgb(226, 192, 55);
-}
-
-.subscription-form-card > h2 {
-  color: rgb(255, 255, 255);
-  text-transform: capitalize;
+/* Subscription Form */
+.subscription-form-card {
+  margin: 5rem auto 0 auto;
+  padding: 5rem 1rem;
+  width: 50%;
+  border-radius: var(--radius);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../Images/hero.jpg");
+  background-size: cover;
+  background-position: center;
   text-align: center;
 }
 
-.subscription-form-card > p {
-  color: rgb(255, 255, 255);
-  font-weight: lighter;
-  text-align: center;
+.subscription-form-card h2,
+.subscription-form-card p {
+  color: var(--white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .input-info {
   margin-top: 2rem;
 }
 
-.input-info>form {
-  text-align: center;
-}
-
-.input-info .email {
-  background-color: rgb(255, 255, 255);
-}
-
-.product-card:hover,
-.review-card:hover {
-  scale: 1.1;
-}
-
-/*footer*/
+/* Footer */
 footer {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
   margin-top: 3rem;
   padding: 2rem;
-}
-
-.social-media-accounts-card > ul {
-  display: flex;
-  justify-content: space-around;
-  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 footer h3 {
   margin-bottom: 0.5rem;
   text-align: center;
   text-transform: capitalize;
-  color: rgb(31, 64, 16);
+  color: var(--primary);
   font-size: 20px;
 }
 
@@ -271,9 +283,34 @@ footer a {
 }
 
 footer a > i {
-  color: rgb(186, 123, 29);
+  color: var(--secondary);
+  transition: transform 0.3s ease-in-out;
 }
 
 footer a > i:hover {
-  scale: 1.2;
+  transform: scale(1.2);
+}
+
+.social-media-accounts-card > ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav > ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .subscription-form-card {
+    width: 90%;
+    padding: 2rem 1rem;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
