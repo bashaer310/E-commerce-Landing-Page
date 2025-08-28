@@ -258,6 +258,9 @@ header {
 .input-info {
   margin-top: 2rem;
 }
+.input-info form input[type="submit"] {
+  margin-top: 1rem;
+}
 
 /* Footer */
 footer {
@@ -312,5 +315,9 @@ footer a > i:hover {
   footer {
     flex-direction: column;
     text-align: center;
+  }
+
+  footer section {
+    margin: 0 auto;
   }
 }
