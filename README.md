@@ -24,7 +24,7 @@ https://github.com/user-attachments/assets/3ae0423f-4b93-43d9-9ec8-e08dec90dadd
    ```
 2. Navigate to the project folder:
    ```bash
-   E-commerce-Landing-Page
+   cd E-commerce-Landing-Page
    ```
 3. Open index.html in your browser.
   
